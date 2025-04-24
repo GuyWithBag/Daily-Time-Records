@@ -1,7 +1,7 @@
 ﻿
 namespace Daily_Time_Records
 {
-    partial class MainForm
+    partial class LoginForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,25 +29,27 @@ namespace Daily_Time_Records
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxUser = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.textBoxIDNumber = new System.Windows.Forms.TextBox();
+            this.buttonLogin = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.labelWelcome = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBoxUser
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(71, 82);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxUser.Location = new System.Drawing.Point(71, 82);
+            this.pictureBoxUser.Name = "pictureBoxUser";
+            this.pictureBoxUser.Size = new System.Drawing.Size(100, 50);
+            this.pictureBoxUser.TabIndex = 0;
+            this.pictureBoxUser.TabStop = false;
             // 
             // dataGridView1
             // 
@@ -85,48 +87,67 @@ namespace Daily_Time_Records
             this.label3.TabIndex = 4;
             this.label3.Text = "Password";
             // 
-            // textBox1
+            // textBoxPassword
             // 
-            this.textBox1.Location = new System.Drawing.Point(609, 270);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 5;
+            this.textBoxPassword.Location = new System.Drawing.Point(609, 270);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(100, 23);
+            this.textBoxPassword.TabIndex = 5;
             // 
-            // textBox2
+            // textBoxIDNumber
             // 
-            this.textBox2.Location = new System.Drawing.Point(609, 182);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 6;
+            this.textBoxIDNumber.Location = new System.Drawing.Point(609, 182);
+            this.textBoxIDNumber.Name = "textBoxIDNumber";
+            this.textBoxIDNumber.Size = new System.Drawing.Size(100, 23);
+            this.textBoxIDNumber.TabIndex = 6;
             // 
-            // button1
+            // buttonLogin
             // 
-            this.button1.Location = new System.Drawing.Point(609, 358);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "LOGIN";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonLogin.Location = new System.Drawing.Point(609, 358);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonLogin.Size = new System.Drawing.Size(75, 23);
+            this.buttonLogin.TabIndex = 7;
+            this.buttonLogin.Text = "LOGIN";
+            this.buttonLogin.UseVisualStyleBackColor = true;
             // 
-            // MainForm
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(609, 107);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(102, 15);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Daily Time Record";
+            // 
+            // labelWelcome
+            // 
+            this.labelWelcome.AutoSize = true;
+            this.labelWelcome.Location = new System.Drawing.Point(266, 107);
+            this.labelWelcome.Name = "labelWelcome";
+            this.labelWelcome.Size = new System.Drawing.Size(139, 15);
+            this.labelWelcome.TabIndex = 9;
+            this.labelWelcome.Text = "Good morning Kromyko!";
+            // 
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.labelWelcome);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.buttonLogin);
+            this.Controls.Add(this.textBoxIDNumber);
+            this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "MainForm";
+            this.Controls.Add(this.pictureBoxUser);
+            this.Name = "LoginForm";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.MainForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -135,14 +156,16 @@ namespace Daily_Time_Records
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxUser;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.TextBox textBoxIDNumber;
+        private System.Windows.Forms.Button buttonLogin;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelWelcome;
     }
 }
 

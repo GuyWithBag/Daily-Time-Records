@@ -36,5 +36,20 @@ namespace Daily_Time_Records.Repositories
                 return execute.ToString();
             }
         }
+
+        public void LogLogin(string username)
+        {
+            using (MySqlConnection conn = new MySqlConnection(_connectionString))
+            {
+                conn.Open();
+                string query = "INSERT INTO login_log (username, login_time) VALUES (@username, @loginTime)";
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@loginTime", DateTime.Now);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }

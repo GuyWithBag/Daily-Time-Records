@@ -17,7 +17,13 @@ namespace Daily_Time_Records
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            using (LoginForm loginForm = new LoginForm())
+            {
+                if (loginForm.ShowDialog() == DialogResult.OK)
+                {
+                    MessageBox.Show("Succesfully Logged In!");
+                }
+            }
         }
     }
 }
