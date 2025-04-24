@@ -63,27 +63,27 @@ namespace Daily_Time_Records
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(609, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.Size = new System.Drawing.Size(54, 15);
             this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.label1.Text = "Starbuko";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(609, 151);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
+            this.label2.Size = new System.Drawing.Size(65, 15);
             this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.label2.Text = "ID Number";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(609, 236);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 15);
+            this.label3.Size = new System.Drawing.Size(57, 15);
             this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
+            this.label3.Text = "Password";
             // 
             // textBox1
             // 
@@ -103,9 +103,10 @@ namespace Daily_Time_Records
             // 
             this.button1.Location = new System.Drawing.Point(609, 358);
             this.button1.Name = "button1";
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
+            this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // MainForm
@@ -124,6 +125,7 @@ namespace Daily_Time_Records
             this.Controls.Add(this.pictureBox1);
             this.Name = "MainForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
